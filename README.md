@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌾 KrushiPlus: ML-Driven Anomaly Detection & Remote Irrigation
 
-# Run and deploy your AI Studio app
+**KrushiPlus** is an end-to-end Ag-Tech solution designed to minimize crop loss and equipment failure for Indian farmers. By combining **IoT edge computing** with **Machine Learning**, the system predicts pump failures before they happen and allows farmers to manage their resources remotely.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/215f2b87-fd9d-49c1-bfb5-906401b294f9
+## 🚀 Key Features
+* **Predictive Maintenance:** Embedded ML models detect anomalies in pump vibrations and flow rates to prevent burnouts.
+* **Remote Irrigation:** Real-time pump control via a mobile-responsive web dashboard.
+* **Edge Intelligence:** Local data processing on ESP32 to ensure functionality even with spotty internet.
+* **Live Monitoring:** Real-time tracking of soil moisture, temperature, and water flow.
 
-## Run Locally
+## 🛠️ Tech Stack
+| Layer | Technologies |
+| :--- | :--- |
+| **Hardware** | ESP32, LoRaWAN, Relay Modules, Flow/Moisture Sensors |
+| **Embedded AI** | Arduino C++, TensorFlow Lite Micro / TinyML |
+| **Backend** | Firebase Realtime Database, Google Cloud Functions |
+| **Frontend** | React.js, Vite, Tailwind CSS |
+| **Development** | Cursor.ai, Project IDX |
 
-**Prerequisites:**  Node.js
+## 📐 System Architecture
+The system follows an **IoT Predictive Maintenance Flow**:
+1. **Sensor Data Acquisition:** Real-time readings from the field.
+2. **Data Filtering:** Noise removal and processing on the ESP32.
+3. **ML Inference:** Local anomaly detection (Normal vs. Potential Failure).
+4. **Cloud Sync:** Data transmission to Firebase for dashboard visualization.
+5. **Actuation:** Remote commands sent from the UI back to the pump relay.
 
+## 📂 Project Structure
+```text
+├── hardware/           # Arduino/ESP32 source code & wiring diagrams
+├── ml-model/           # Jupyter notebooks & exported TFLite models
+├── web-app/            # Vite + React frontend dashboard
+└── docs/               # Research paper & Poster assets
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+LINK to LIVE DEMO --> https://krishipulse.netlify.app/
