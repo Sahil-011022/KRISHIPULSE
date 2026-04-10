@@ -34,4 +34,4 @@ The system follows an **IoT Predictive Maintenance Flow**:
 ├── web-app/            # Vite + React frontend dashboard
 └── docs/               # Research paper & Poster assets
 
-Link to live intro page --> https://krishipulse.netlify.app/
+## Link to live intro page --> https://krishipulse.netlify.app/
