@@ -27,11 +27,10 @@ The system follows an **IoT Predictive Maintenance Flow**:
 4. **Cloud Sync:** Data transmission to Firebase for dashboard visualization.
 5. **Actuation:** Remote commands sent from the UI back to the pump relay.
 
+Link to intro page --> https://krishipulse.netlify.app/
 ## 📂 Project Structure
 ```text
 ├── hardware/           # Arduino/ESP32 source code & wiring diagrams
 ├── ml-model/           # Jupyter notebooks & exported TFLite models
 ├── web-app/            # Vite + React frontend dashboard
 └── docs/               # Research paper & Poster assets
-
-## Link to live intro page --> https://krishipulse.netlify.app/
